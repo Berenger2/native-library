@@ -15,9 +15,9 @@ export default function App() {
     <ApiProvider>
     <NavigationContainer>
       <Drawer.Navigator>
-       <Drawer.Screen name="list" component={ListScreen} />
-      <Drawer.Screen name="add" component={AddScreen} />
-      <Drawer.Screen name="update" component={UpdateScreen}  />
+       <Drawer.Screen name="list" component={ListScreen} options={{ drawerLabel: 'Liste des Livres' }}/>
+      <Drawer.Screen name="add" component={AddScreen} options={{ drawerLabel: 'Ajouter un Livre' }} />
+       <Drawer.Screen name="update" component={UpdateScreen} options={{ drawerLabel: 'Update' }} />
       </Drawer.Navigator>
     </NavigationContainer>
     </ApiProvider>
