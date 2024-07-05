@@ -55,7 +55,7 @@ export default function ListScreen({ navigation }) {
     return (
         <View style={styles.container}>
           <Image source={require('../assets/books.png')} style={styles.icon} />
-            <Text style={styles.header}>List of Books</Text>
+            <Text style={styles.header}>Lite des livres</Text>
             <FlatList
                 keyExtractor={(item) => item.id.toString()}
                 data={books}
